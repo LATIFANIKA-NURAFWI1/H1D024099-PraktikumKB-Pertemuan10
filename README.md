@@ -50,7 +50,7 @@ Program ini menyelesaikan **Knapsack Problem** (masalah memilih barang dengan ke
 
 ---
 
-## ⚙️ Instalasi & Persiapan
+## Instalasi & Persiapan
 
 ### 1. Pastikan Python terinstal (versi 3.7+)
 ```bash
@@ -129,6 +129,49 @@ Contoh: `2+4=6` → digit terakhir 6 → **Swap Mutation**
 *(Nilai sebenarnya dapat berbeda karena proses acak)*
 
 ---
+## Contoh Output
+
+### Hasil akhir (contoh)
+```
+=============================================
+=== PROGRAM ALGORITMA GENETIKA UNTUK KNAPSACK PROBLEM ===
+
+Masukkan NIM lengkap atau dua digit terakhir NIM: H1D024099
+==================================================
+  Dua digit terakhir NIM : 99
+  Digit pertama [9]  → Seleksi  : Tournament Selection
+  Digit kedua   [9]  → Crossover: One-Point Crossover
+  9+9 = 18 → digit terakhir 8 → Mutasi   : Uniform Mutation
+==================================================
+
+Nilai Fitness:
+Individu 1: Fitness = 85
+Individu 2: Fitness = 0
+Individu 3: Fitness = 60
+
+Parent Terpilih:
+Parent 1: individu19
+Parent 2: individu1
+
+Anak Hasil Crossover:
+Anak 1: [0, 1, 0, 0, 0]
+Anak 2: [0, 0, 0, 1, 1]
+
+Anak Setelah Mutasi:
+Anak 1 (Swap Mutation): [1, 0, 0, 0, 0]
+Anak 2 (Inversion Mutation): [0, 1, 0, 0, 0]
+Anak 3 (Uniform Mutation): [0, 1, 0, 1, 0]
+
+=== HASIL OPTIMASI GUDANG ===
+
+Total Keuntungan (Fitness Terbaik) : 125
+Total Ukuran                       : 14 / 15
+Barang Terpilih:
+  - Barang2
+  - Barang4
+  - Barang5
+=============================================
+```
 
 ## Grafik yang Dihasilkan
 
